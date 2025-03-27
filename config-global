@@ -1,0 +1,8 @@
+export type ConfigValue={
+    site:{
+        name:string
+        serverUrl:string
+        basePath:string
+        version:string
+    }
+}
