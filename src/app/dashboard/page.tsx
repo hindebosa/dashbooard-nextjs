@@ -1,7 +1,5 @@
-const Dashbooard
- = () => {
-    return ( <></> );
-}
- 
-export default Dashbooard
-;
+const Dashbooard = () => {
+  return <></>;
+};
+
+export default Dashbooard;
