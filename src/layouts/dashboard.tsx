@@ -1,12 +1,4 @@
-import {
-  AppBar,
-  Container,
-  Toolbar,
-  Typography,
- 
-} from "@mui/material";
-
-
+import { AppBar, Container, Toolbar, Typography } from "@mui/material";
 
 const DashboardLayout = () => {
   return (

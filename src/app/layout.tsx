@@ -1,14 +1,12 @@
 import type { Metadata } from "next";
-import '@fontsource/inter/300.css';
-import '@fontsource/inter/400.css';
-import '@fontsource/inter/500.css';
-import '@fontsource/inter/700.css';
-import { AppRouterCacheProvider } from '@mui/material-nextjs/v15-appRouter';
+import "@fontsource/inter/300.css";
+import "@fontsource/inter/400.css";
+import "@fontsource/inter/500.css";
+import "@fontsource/inter/700.css";
+import { AppRouterCacheProvider } from "@mui/material-nextjs/v15-appRouter";
 import "./globals.css";
-import InitColorSchemeScript from "@mui/material/InitColorSchemeScript"
+import InitColorSchemeScript from "@mui/material/InitColorSchemeScript";
 import AppThemeProvider from "./theme/theme-context";
-
-
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -23,13 +21,13 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body>
-      <AppRouterCacheProvider options={{enableCssLayer: false}}>
-        <AppThemeProvider>
-          <InitColorSchemeScript attribute="class" />
-          {/* <MainNavbar /> */}
-          {children}
-        </AppThemeProvider>
-      </AppRouterCacheProvider>
+        <AppRouterCacheProvider options={{ enableCssLayer: false }}>
+          <AppThemeProvider>
+            <InitColorSchemeScript attribute="class" />
+            {/* <MainNavbar /> */}
+            {children}
+          </AppThemeProvider>
+        </AppRouterCacheProvider>
       </body>
     </html>
   );
