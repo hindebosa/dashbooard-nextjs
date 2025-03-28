@@ -8,7 +8,7 @@ import type {} from "@mui/material/themeCssVarsAugmentation";
 const AppThemeContext = createContext(null);
 
 
-export const AppThemeProvider = (props: React.PropsWithChildren<{ }>) => {
+export const AppThemeProvider = (props: React.PropsWithChildren<unknown>) => {
   
   const theme =  responsiveFontSizes(createTheme({
           cssVariables: {
