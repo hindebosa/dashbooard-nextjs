@@ -10,6 +10,12 @@
     "test": "vitest"
   },
   "dependencies": {
+    "@emotion/cache": "^11.14.0",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@fontsource/inter": "^5.2.5",
+    "@mui/material": "^7.0.0",
+    "@mui/material-nextjs": "^7.0.0",
     "@testing-library/dom": "^10.4.0",
     "@testing-library/react": "^16.2.0",
     "@vitejs/plugin-react": "^4.3.4",
@@ -22,6 +28,7 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@iconify/react": "^5.2.0",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
