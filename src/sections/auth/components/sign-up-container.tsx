@@ -16,8 +16,14 @@ const SignUpContainer = ({ children }: Props) => {
       }}
     >
       <Paper sx={{ p: 2, m: 2, bgcolor: "background.paper" }}>
-        <Typography variant="h6" align="center" gutterBottom> WELCOME TO RENT-CAR</Typography>
-        <Typography variant="subtitle1" align="center" gutterBottom> Sign up</Typography>
+        <Typography variant="h6" align="center" gutterBottom>
+          {" "}
+          WELCOME TO RENT-CAR
+        </Typography>
+        <Typography variant="subtitle1" align="center" gutterBottom>
+          {" "}
+          Sign up
+        </Typography>
         {children}
       </Paper>
     </Box>
