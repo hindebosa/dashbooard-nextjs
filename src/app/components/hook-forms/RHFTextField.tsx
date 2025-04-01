@@ -3,9 +3,16 @@ import { Controller, useFormContext } from "react-hook-form";
 
 type Props = TextFieldProps & {
   name: string;
+  size?: "small" | "medium";
 };
 
-const RHFTextField = ({ name, type, helperText, ...other }: Props) => {
+const RHFTextField = ({
+  name,
+  type,
+  helperText,
+  size = "small",
+  ...other
+}: Props) => {
   const { control } = useFormContext();
   return (
     <Controller
@@ -16,6 +23,7 @@ const RHFTextField = ({ name, type, helperText, ...other }: Props) => {
           {...field}
           type={type}
           fullWidth
+          size={size}
           value={type === "number" && field.value === 0 ? "" : field.value}
           error={!!error}
           helperText={error?.message || helperText}
