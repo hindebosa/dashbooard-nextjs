@@ -1,8 +1,8 @@
 type Props = {
-    children: React.ReactNode;
-  }
+  children: React.ReactNode;
+};
 
-const Layout = ({children}:Props) => {
+const Layout = ({ children }: Props) => {
   return <>{children}f</>;
 };
 
