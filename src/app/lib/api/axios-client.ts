@@ -15,7 +15,7 @@ axiosClient.interceptors.request.use(
   },
   (error) => {
     return Promise.reject(error);
-  }
+  },
 );
 
 // Response interceptor
@@ -37,7 +37,7 @@ axiosClient.interceptors.response.use(
       // Something happened in setting up the request
       return Promise.reject({ message: error.message });
     }
-  }
+  },
 );
 
 export default axiosClient;
