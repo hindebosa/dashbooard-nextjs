@@ -7,6 +7,8 @@ import { AppRouterCacheProvider } from "@mui/material-nextjs/v15-appRouter";
 import "./globals.css";
 import InitColorSchemeScript from "@mui/material/InitColorSchemeScript";
 import AppThemeProvider from "./theme/theme-context";
+import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
+import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider/LocalizationProvider";
 
 export const metadata: Metadata = {
   title: "Create Next App",
